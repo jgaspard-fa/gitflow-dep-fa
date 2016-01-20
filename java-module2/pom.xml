@@ -11,6 +11,7 @@
     <artifactId>java-module2</artifactId>
 
     <!-- release 0.6 -->
+    <!-- release 0.7 -->
     <dependencies>
 
         <dependency>
