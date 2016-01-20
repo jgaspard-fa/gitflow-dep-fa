@@ -13,6 +13,7 @@
     <version>0.6.2</version>
     <packaging>pom</packaging>
 
+    <!-- hotf 0.6.2 -->
     <modules>
         <module>java-module1</module>
         <module>java-module2</module>
