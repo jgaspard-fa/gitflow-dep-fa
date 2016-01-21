@@ -32,7 +32,7 @@
                         <featureBranchPrefix>feature.ex-</featureBranchPrefix>
                         <releaseBranchPrefix>release.ex-</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix.ex-</hotfixBranchPrefix>
-                        <versionTagPrefix>tag.ex-</versionTagPrefix>
+                        <versionTagPrefix>gitflow-dep-fa-</versionTagPrefix>
                     </flowInitContext>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushReleases>true</pushReleases>
