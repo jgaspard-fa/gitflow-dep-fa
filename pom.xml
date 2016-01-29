@@ -10,8 +10,12 @@
 
     <groupId>com.fa.gitflow-example</groupId>
     <artifactId>java-module</artifactId>
-    <version>0.12.0</version>
+    <version>0.14.0</version>
     <packaging>pom</packaging>
+
+    <properties>
+        <versionTagPrefix>gitflow-dep-fa</versionTagPrefix>
+    </properties>
 
     <properties>
         <versionTagPrefix>gitflow-dep-fa</versionTagPrefix>
