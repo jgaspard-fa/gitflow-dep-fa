@@ -17,10 +17,6 @@
         <versionTagPrefix>gitflow-dep-fa</versionTagPrefix>
     </properties>
 
-    <properties>
-        <versionTagPrefix>gitflow-dep-fa</versionTagPrefix>
-    </properties>
-
     <!-- hotf 0.6.2 -->
     <modules>
         <module>java-module1</module>
