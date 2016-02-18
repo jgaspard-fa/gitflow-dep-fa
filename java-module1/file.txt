@@ -3,3 +3,4 @@ hotf 0.23.2
 hotf 0.23.3
 dev while rel 0.26
 dev while rel 0.26
+dev while rel 0.26
