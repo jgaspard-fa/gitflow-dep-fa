@@ -5,6 +5,8 @@ node {
     
    // Mark the code checkout 'stage'....
    stage 'Checkout'
+   
+   print "DEBUG: parameter repo = ${repo}"
 
    // Get some code from a GitHub repository
    git url: 'https://github.com/jgaspard-fa/${repo}.git'
