@@ -10,6 +10,7 @@ node {
 
    // Get some code from a GitHub repository
    git url: 'git@github.com:financeactive/' + repository + '.git'
+   // git url: 'https://github.com/jgaspard-fa/' + repo + '.git'
 
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
