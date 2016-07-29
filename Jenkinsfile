@@ -22,6 +22,6 @@ node {
    // Mark the code build 'stage'....
    stage 'Build'
    // Run the maven build
-   sh "${mvnHome}/bin/mvn -Dmaven.test.failure.ignore -P${profile} clean package"
+   sh "${mvnHome}/bin/mvn -Dmaven.test.skip=true -P${profile} clean package"
    step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
 }
