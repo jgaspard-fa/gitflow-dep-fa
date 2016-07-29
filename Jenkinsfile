@@ -8,11 +8,11 @@ node {
    
    print "DEBUG: parameter repository = ${repository}"
    
-   print "DEBUG: $M2_HOME"
+   print "DEBUG: M2_HOME"
    sh "echo $M2_HOME"
    sh "unset M2_HOME"
    
-   print "DEBUG: $M2_HOME"
+   print "DEBUG: M2_HOME"
    sh "echo $M2_HOME"
 
    // Get some code from a GitHub repository
