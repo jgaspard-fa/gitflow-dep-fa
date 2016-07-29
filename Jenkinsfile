@@ -8,13 +8,10 @@ node {
    
    print "DEBUG: parameter repository = ${repository}"
    
-   //print "DEBUG: M2_HOME"
-   sh "unset M2_HOME"
-   //print "DEBUG: M2_HOME echoed"
-   //sh "unset M2_HOME"
-  // print "DEBUG: M2_HOME unset"
-   //print "DEBUG: M2_HOME"
-   //sh "echo $M2_HOME"
+   sh('echo $M2_HOME')
+   sh('echo $M2_HOME > ECHO')
+   def stdout = readFile('ECHO').trim()
+   print "out: " + stdout
 
    // Get some code from a GitHub repository
    //non git url: 'git@github.com:financeactive/' + repository + '.git'
