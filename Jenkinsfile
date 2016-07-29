@@ -9,7 +9,7 @@ node {
    print "DEBUG: parameter repository = ${repository}"
    
    //print "DEBUG: M2_HOME"
-   sh "unset $M2_HOME"
+   sh "unset M2_HOME"
    //print "DEBUG: M2_HOME echoed"
    //sh "unset M2_HOME"
   // print "DEBUG: M2_HOME unset"
