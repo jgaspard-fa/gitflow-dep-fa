@@ -7,6 +7,13 @@ node {
    stage 'Checkout'
    
    print "DEBUG: parameter repository = ${repository}"
+   
+   print "DEBUG: $M2_HOME"
+   sh "echo $M2_HOME"
+   sh "unset M2_HOME"
+   
+   print "DEBUG: $M2_HOME"
+   sh "echo $M2_HOME"
 
    // Get some code from a GitHub repository
    //non git url: 'git@github.com:financeactive/' + repository + '.git'
