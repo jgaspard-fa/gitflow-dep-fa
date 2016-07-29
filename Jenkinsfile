@@ -6,10 +6,10 @@ node {
    // Mark the code checkout 'stage'....
    stage 'Checkout'
    
-   print "DEBUG: parameter repo = ${repo}"
+   print "DEBUG: parameter repository = ${repository}"
 
    // Get some code from a GitHub repository
-   git url: 'https://github.com/financeactive/' + repo + '.git'
+   git url: 'https://github.com/financeactive/' + repository + '.git'
 
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
