@@ -23,7 +23,7 @@ node {
    stage 'Build'
    // Run the maven build
    sh "${mvnHome}/bin/mvn -Dmaven.test.skip=true -P${profile} clean package"
-   step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+   //step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
    
    step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: emailextrecipients(['jgaspard@financeactive.com'])])
 }
