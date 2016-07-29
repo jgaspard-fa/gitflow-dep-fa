@@ -10,8 +10,9 @@ node {
    
    print "DEBUG: M2_HOME"
    sh "echo $M2_HOME"
+   print "DEBUG: M2_HOME echoed"
    sh "unset M2_HOME"
-   
+   print "DEBUG: M2_HOME unset"
    print "DEBUG: M2_HOME"
    sh "echo $M2_HOME"
 
