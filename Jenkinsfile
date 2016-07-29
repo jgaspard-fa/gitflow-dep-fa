@@ -9,7 +9,7 @@ node {
    print "DEBUG: parameter repository = ${repository}"
 
    // Get some code from a GitHub repository
-   git url: 'https://github.com/financeactive/' + repository + '.git'
+   git url: 'git@github.com:financeactive/' + repository + '.git'
 
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
