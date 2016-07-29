@@ -7,7 +7,7 @@ node {
    stage 'Checkout'
 
    // Get some code from a GitHub repository
-   git url: 'https://github.com/jgaspard-fa/gitflow-dep-fa.git'
+   git url: 'https://github.com/jgaspard-fa/${repo}.git'
 
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
