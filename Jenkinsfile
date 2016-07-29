@@ -30,7 +30,7 @@ node {
    // Run the maven build
    sh "${mvnHome}/bin/mvn -P${profile} clean package"
    
-   if ( profile.contains 'unit') {
+   if ( profile.contains "unit") {
        step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
    }
    
