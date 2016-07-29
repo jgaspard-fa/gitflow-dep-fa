@@ -7,6 +7,7 @@ node {
    stage 'Checkout'
    
    print "DEBUG: parameter repository = ${repository}"
+   print "DEBUG: parameter profile = ${profile}"
    
    sh('echo $M2_HOME')
    sh('echo $M2_HOME > ECHO')
@@ -27,8 +28,11 @@ node {
    // Mark the code build 'stage'....
    stage 'Build'
    // Run the maven build
-   sh "${mvnHome}/bin/mvn -Dmaven.test.skip=true -P${profile} clean package"
-   step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+   sh "${mvnHome}/bin/mvn -P${profile} clean package"
+   
+   if ( profile.contains 'unit') {
+       step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+   }
    
    step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: emailextrecipients(['jgaspard@financeactive.com'])])
 }
