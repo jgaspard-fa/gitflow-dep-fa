@@ -18,6 +18,7 @@
     </properties>
 
     <!-- hotf 0.6.2 -->
+    <!-- rel 0.28.0 -->
     <modules>
         <module>java-module1</module>
         <module>java-module2</module>
