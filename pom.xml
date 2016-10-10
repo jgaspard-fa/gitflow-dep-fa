@@ -26,7 +26,7 @@
 
     <build>
         <plugins>
-            <plugin>
+            <!--<plugin>
                 <groupId>external.atlassian.jgitflow</groupId>
                 <artifactId>jgitflow-maven-plugin</artifactId>
                 <version>1.0-m5.1</version>
@@ -42,6 +42,14 @@
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushReleases>true</pushReleases>
                     <pushHotfixes>true</pushHotfixes>
+                </configuration>
+            </plugin>-->
+            <plugin>
+                <groupId>com.amashchenko.maven.plugin</groupId>
+                <artifactId>gitflow-maven-plugin</artifactId>
+                <version>1.3.0</version>
+                <configuration>
+                    <!-- optional configuration -->
                 </configuration>
             </plugin>
         </plugins>
